@@ -32,10 +32,12 @@ namespace CinemaManager_GFG1.Controllers
         // POST: ProducersController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Producer p)
         {
             try
             {
+                ctx.Producers.Add(p);
+                ctx.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -47,16 +49,20 @@ namespace CinemaManager_GFG1.Controllers
         // GET: ProducersController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+             Producer prod  = ctx.Producers.Find(id);
+            
+            return View(prod);
         }
 
         // POST: ProducersController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Producer p)
         {
             try
             {
+                ctx.Producers.Update(p);
+                ctx.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch
