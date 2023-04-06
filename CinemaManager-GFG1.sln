@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaManager-GFG1", "CinemaManager-GFG1\CinemaManager-GFG1.csproj", "{BDE5F013-6020-41FC-91D4-6A3E5F33728F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE5F013-6020-41FC-91D4-6A3E5F33728F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE5F013-6020-41FC-91D4-6A3E5F33728F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE5F013-6020-41FC-91D4-6A3E5F33728F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE5F013-6020-41FC-91D4-6A3E5F33728F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C552E280-28A8-4868-AFCB-63BF67F031CD}
+	EndGlobalSection
+EndGlobal
