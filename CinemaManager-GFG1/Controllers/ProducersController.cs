@@ -32,11 +32,11 @@ namespace CinemaManager_GFG1.Controllers
         // POST: ProducersController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Producer p)
+        public ActionResult Create(Producer prod)
         {
             try
             {
-                ctx.Producers.Add(p);
+                ctx.Producers.Add(prod);
                 ctx.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }

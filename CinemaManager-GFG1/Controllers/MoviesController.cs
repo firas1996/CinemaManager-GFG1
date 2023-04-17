@@ -24,6 +24,11 @@ namespace CinemaManager_GFG1.Controllers
             var cinemaDbContext = _context.Movies.Include(m => m.Producer);
             return View(await cinemaDbContext.ToListAsync());
         }
+        public async Task<IActionResult> MoviesAndTheirProds()
+        {
+            var cinemaDbContext = _context.Movies.Include(m => m.Producer);
+            return View(await cinemaDbContext.ToListAsync());
+        }
 
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
